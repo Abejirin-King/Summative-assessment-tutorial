@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NYC Taxi Analytics</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="/static/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header><h1>NYC Taxi Analytics</h1><p>Overview</p></header>
+  <main class="container">
+    <section class="kpis">
+      <div class="kpi"><h2 id="totalTrips">--</h2><p>Total Trips</p></div>
+      <div class="kpi"><h2 id="totalRevenue">--</h2><p>Total Revenue</p></div>
+      <div class="kpi"><h2 id="avgFare">--</h2><p>Average Fare</p></div>
+      <div class="kpi"><h2 id="avgDistance">--</h2><p>Avg Distance (km)</p></div>
+      <div class="kpi"><h2 id="avgDuration">--</h2><p>Avg Duration (min)</p></div>
+      <div class="kpi"><h2 id="avgTip">--</h2><p>Avg Tip %</p></div>
+    </section>
+    <section class="charts">
+      <div class="card"><h3>Payment Type Distribution</h3><canvas id="paymentChart"></canvas></div>
+      <div class="card"><h3>Trip Distance Distribution</h3><canvas id="distanceChart"></canvas></div>
+    </section>
+  </main>
+  <script src="/static/script.js"></script>
+</body>
+</html>
